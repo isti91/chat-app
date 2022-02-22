@@ -1,0 +1,10 @@
+<div class="chat-messages">
+    <div class="chat-messages-show-container">
+        <ul class="chat-messages-show-list" id="message-board">
+        </ul>
+    </div>
+    <div class="chat-messages-create-container">
+        <input class="chat-messages-create-input" type="text" [(ngModel)]="message" (keydown.enter)="sendMessage()">
+        <button class="chat-messages-create-button" (click)="sendMessage()"> Küldés </button>
+    </div>
+</div>
